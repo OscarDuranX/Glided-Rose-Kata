@@ -1,5 +1,5 @@
 suites:
-  acme_suite:
+  gildedrose_suite:
     namespace: App
     psr4_prefix: App
     src_path:  src
