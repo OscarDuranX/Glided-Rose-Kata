@@ -17,7 +17,7 @@ class GildedRoseSpec extends ObjectBehavior
      */
     function it_is_initializable()
     {
-        $this->beConstructedWith('normal',10,5);
+        $this->beConstructedThrough('of',['normal',10,5]);
         $this->shouldHaveType(GildedRose::class);
     }
 
@@ -26,7 +26,7 @@ class GildedRoseSpec extends ObjectBehavior
      */
     function it_updates_normal_items_before_sell_date()
     {
-        $this->beConstructedWith('normal',10,5);
+        $this->beConstructedThrough('of',['normal',10,5]);
 
         $this->tick();
 
