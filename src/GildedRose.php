@@ -21,6 +21,8 @@ class GildedRose
         return new static($name, $quality, $sellIn);
     }
 
+
+
     public function tick()
     {
         if ($this->name != 'Aged Brie' and $this->name != 'Backstage passes to a TAFKAL80ETC concert') {
